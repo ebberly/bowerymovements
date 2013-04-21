@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BOWERY MOVEMENTS</title>
+
+		<!-- load CSS -->
+		<link rel="stylesheet" type="text/css" href="http://reset5.googlecode.com/hg/reset.min.css">
+		<link rel="stylesheet" type="text/css" href="css/about.css">
+
+		<!-- load jQuery librarys -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+	</head>
+		<body>
+			<div id="container">
+				<a href="bm--1__1.html"><img id="logo" src="svg/bm_logo.svg"></a>
+				<div id="background"><img src="img/about.png"></div>
+			</div>
+
+			<script>
+				$(document).ready(function() {
+					
+
+					
+					function resizeFunc(){
+						console.log('resizeFunc');
+						var total_width = $('#background img').width();
+						var margin_left = (window.innerWidth - total_width)/2;
+
+						console.log('total_width: '+ total_width+ ' margin_left: '+ margin_left);
+
+						$('#background img').css('marginLeft', margin_left);
+					}
+
+					$('#background img').load(function() {
+						resizeFunc();
+						$(window).resize(resizeFunc);
+					});
+
+
+					
+
+				});
+			</script>
+		</body>
+</html>

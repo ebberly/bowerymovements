@@ -1,0 +1,120 @@
+body{
+	overflow: hidden;
+	word-wrap:break-word;
+}
+
+
+a:visited{
+	color: black;
+}
+
+a:hover{
+	color: purple;
+}
+
+#container{
+	position: fixed;
+	width:4000px;
+	height:3000px;
+	
+	user-select: none;
+}
+
+#logo{
+	position:fixed;
+	top:0%;
+	right:0%;
+	margin-top: 30px;
+	margin-right:10px;
+	z-index: 200;
+}
+
+#image{
+	
+}
+
+#image img{
+	height: auto;
+	width: auto;
+}
+
+#overlay{
+	position: absolute;
+	top:0%;
+	left:0%;
+	height:auto;
+	width: auto;
+	user-select: none;
+
+}
+
+#marker{
+	z-index: 0;
+	position:fixed;
+	top: 50%;
+	left: 50%;
+	color: red;
+	font-size: 36px;
+}
+
+polygon{
+	fill: black;
+	fill-opacity: 0%;
+}
+
+polygon:hover{
+	fill-opacity: 8%;
+}
+
+rect{
+	fill: black;
+	fill-opacity: 0%;
+}
+
+rect:hover{
+	fill-opacity: 5%;
+}
+
+#spin-left{
+	position:fixed;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	color: black;
+	z-index:200;
+	top:85%;
+	left:92%;
+	font-size:24px;
+	text-decoration: none;
+}
+
+#spin-right{
+	position:fixed;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	color: black;
+	z-index:200;
+	top:90%;
+	left:92%;
+	font-size:24px;
+	text-decoration: none;
+}
+
+#zoom-in{
+	position:fixed;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;;
+	color: black;
+	z-index:200;
+	top:25%;
+	left:92%;
+	font-size:24px;
+	text-decoration: none;
+}
+
+#zoom-out{
+	position:fixed;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	color: black;
+	z-index:200;
+	top:20%;
+	left:92%;
+	font-size:24px;
+	text-decoration: none;
+}
